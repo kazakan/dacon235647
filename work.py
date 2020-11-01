@@ -15,7 +15,7 @@ Download data and set directory.
 import pandas as pd
 import numpy as np
 import matplotlib as plt
-import seaborn
+import seaborn as sns
 
 PATH_TRAIN = "./data/train.csv"
 PATH_TEST_X = "./data/test_x.csv"
@@ -42,5 +42,8 @@ df_train.describe()
 
 # %%
 df_train.columns
+
+# %%
+sns.heatmap(df_train.corr())
 
 
